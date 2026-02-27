@@ -280,3 +280,12 @@ body{ overflow:hidden; }
     top: 22px;
   }
 }
+
+.snap-section {
+  contain: layout paint;
+}
+
+.animado {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
