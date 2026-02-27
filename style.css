@@ -14,8 +14,12 @@ body{ overflow:hidden; }*/
 
 /* container do scroll (body ou um wrapper) */
 html, body {
+ margin: 0;
+  padding: 0;
+ 
   height: 100%;
   scroll-behavior: auto; /* importante com snap */
+ background: #000;
 }
 
 body {
