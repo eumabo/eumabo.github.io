@@ -2,15 +2,32 @@
 *{ box-sizing:border-box; margin:0; padding:0; }
 
  
-html, body {
+/*html, body {
   margin: 0;
   padding: 0;
   background: #000;
 }
 
 
-/*html,body{ height:100%; font-family:Arial, sans-serif; } */
-body{ overflow:hidden; }
+/*html,body{ height:100%; font-family:Arial, sans-serif; } 
+body{ overflow:hidden; }*/
+
+/* container do scroll (body ou um wrapper) */
+html, body {
+  height: 100%;
+  scroll-behavior: auto; /* importante com snap */
+}
+
+body {
+  scroll-snap-type: y proximity; /* <- em vez de mandatory */
+  overscroll-behavior-y: none;
+}
+
+/* suas seções 100vh */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal; /* evita travar */
+}
 
 .snap{
   height:100vh;
