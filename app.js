@@ -54,3 +54,7 @@ window.addEventListener("pointerdown", async () => {
     soundBtn.hidden = true;
   } catch (e) {}
 }, { once: true });
+
+
+window.addEventListener('wheel', onWheel, { passive: true });
+window.addEventListener('touchmove', onTouchMove, { passive: true });
