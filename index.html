@@ -18,6 +18,24 @@
 
 <body>
 
+   <div class="visit-counter">
+    <span id="visit-number">Carregando...</span>
+  </div>
+
+<script>
+  // pega valor atual
+  let visits = localStorage.getItem("visits");
+
+  if (!visits) {
+    visits = 0;
+  }
+
+  visits++; // soma 1
+  localStorage.setItem("visits", visits);
+
+  // coloca no span
+  document.getElementById("visit-number").textContent = visits;
+</script>
   <nav class="dots">
     <button class="dot is-active" data-to="0"></button>
     <button class="dot" data-to="1"></button>
