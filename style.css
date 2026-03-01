@@ -361,3 +361,19 @@ section {
   }
 }
 
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.site-footer strong {
+  color: #b026ff;
+  text-shadow: 0 0 8px #b026ff;
+}
