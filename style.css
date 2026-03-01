@@ -420,7 +420,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     bottom: 14px;
-    font-size: 5px;
+    font-size: 8px;
     letter-spacing: 1px;
     padding: 8px 12px;
   }
