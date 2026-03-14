@@ -10,15 +10,16 @@
 <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png">
 </head>
 
-<audio id="bgm" src="assets/music.mp3" preload="auto" loop></audio>
+<body>
+
+
+  <audio id="bgm" src="assets/music.mp3" preload="auto" loop></audio>
 
 <button id="soundBtn" class="sound-btn" aria-label="Ativar som" hidden>
      <span style="color: gray; border: 1px color(srgb red green blue);"> Welcome to Zey Profille  </span>
 </button>
 
-<body>
 
-</script>
   <nav class="dots">
     <button class="dot is-active" data-to="0"></button>
     <button class="dot" data-to="1"></button>
@@ -110,7 +111,6 @@
 
   </main>
 
-  <script src="app.js"></script>
 
 
 <div class="scroll-indicator">
@@ -127,5 +127,14 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
   
+
+<div class="contador-global">
+<span class="contador-label">VISITANTES</span>
+<span id="contador">0</span>
+
+
+<script type="module" src="app.js"></script>
+
+</div>
 </body>
 </html>
